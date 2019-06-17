@@ -139,6 +139,9 @@ body {
   margin: 0 auto;
   font-family: 'Quicksand', sans-serif;
 }
+header {
+  margin: 20px 0 20px 0;
+}
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -147,12 +150,19 @@ header nav a {
   padding: 10px;
   text-decoration: none;
   color: #778899;
+  transition-property: color transform;
+  transition-duration: 0.3s;
+}
+header nav a:hover {
+  color: black;
+  transform: scale(1.1);
 }
 .intro {
   width: 100%;
-  background: lightgray;
+  background-image: url(/white-waves.png);
   padding: 50px 30px;
   border-radius: 10px;
+  color: #778899;
 }
 .intro .selfie {
   width: 30%;
@@ -177,9 +187,15 @@ header nav a {
   margin-bottom: 20px;
 }
 .intro button {
-  background-color: gray;
+  background-color: #778899;
   padding: 20px;
   border-radius: 10px;
   color: white;
   font-size: 1.3rem;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.intro button:hover {
+  transform: scale(1.1);
 }
