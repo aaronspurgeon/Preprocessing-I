@@ -137,7 +137,7 @@ body {
 .container {
   width: 800px;
   margin: 0 auto;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 header {
   margin: 20px 0 20px 0;
@@ -198,4 +198,44 @@ header nav a:hover {
 }
 .intro button:hover {
   transform: scale(1.1);
+}
+.skills {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.skills .skills-parent {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skills-flex {
+  width: 350px;
+  margin: 40px 0 40px 0;
+  line-height: 1.4;
+}
+.skills .skills-flex h1 {
+  font-size: 2.3rem;
+}
+.skills .skills-flex h2 {
+  font-size: 1.4rem;
+}
+.skills .list p {
+  border: 1px solid grey;
+  padding: 10px 0 10px 15px;
+}
+.bottom {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.bottom .bottom-parent {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.bottom .bottom-text {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.bottom .grey {
+  background-color: #778899;
+  color: white;
 }
