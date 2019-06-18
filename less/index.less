@@ -225,7 +225,7 @@ header {
     text-align: left;
   }
 
-  button {
+  a {
     background-color: @mainTextColor;
     padding: 20px;
     border-radius: 10px;
@@ -235,9 +235,10 @@ header {
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.3s;
+    text-decoration: none;
   }
 
-  button:hover {
+  a:hover {
     transform: scale(1.1);
     background-color: #1d204d;
   }
@@ -255,12 +256,13 @@ header {
     .flex-style();
 
     .skills-flex {
-      width: 350px;
+      width: 100%;
       margin: 40px 0 40px 0;
       line-height: 1.4;
 
       h1 {
         font-size: 2.3rem;
+        text-align: center;
       }
 
       h2 {
@@ -271,13 +273,13 @@ header {
         font-size: @paragraphTextSize;
       }
     }
-    .list {
-      p {
-        border: 1px solid @mainTextColor;
-        padding: 10px 0 10px 15px;
-        font-size: @paragraphTextSize;
-      }
-    }
+    // .list {
+    //   p {
+    //     border: 1px solid @mainTextColor;
+    //     padding: 10px 0 10px 15px;
+    //     font-size: @paragraphTextSize;
+    //   }
+    // }
   }
 }
 

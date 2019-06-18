@@ -194,7 +194,7 @@ header nav a:hover {
   margin-bottom: 20px;
   text-align: left;
 }
-.intro button {
+.intro a {
   background-color: #0f1133;
   padding: 20px;
   border-radius: 10px;
@@ -204,8 +204,9 @@ header nav a:hover {
   cursor: pointer;
   transition-property: all;
   transition-duration: 0.3s;
+  text-decoration: none;
 }
-.intro button:hover {
+.intro a:hover {
   transform: scale(1.1);
   background-color: #1d204d;
 }
@@ -220,22 +221,18 @@ header nav a:hover {
   justify-content: space-between;
 }
 .skills .skills-parent .skills-flex {
-  width: 350px;
+  width: 100%;
   margin: 40px 0 40px 0;
   line-height: 1.4;
 }
 .skills .skills-parent .skills-flex h1 {
   font-size: 2.3rem;
+  text-align: center;
 }
 .skills .skills-parent .skills-flex h2 {
   font-size: 1.4rem;
 }
 .skills .skills-parent .skills-flex p {
-  font-size: 1.2rem;
-}
-.skills .skills-parent .list p {
-  border: 1px solid #0f1133;
-  padding: 10px 0 10px 15px;
   font-size: 1.2rem;
 }
 .bottom {
