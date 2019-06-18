@@ -151,11 +151,20 @@ body {
   margin: 0 auto;
   font-family: "Quicksand", sans-serif;
   background-image: url(/white-waves.png);
+  border-radius: 10px;
 }
+
+// variables
 
 @mainTextColor: #0f1133;
 @basePadding: 50px 30px;
 @paragraphTextSize: 1.2rem;
+
+// mixins
+.flex-style() {
+  display: flex;
+  justify-content: space-between;
+}
 
 // nav bar
 header {
@@ -184,7 +193,6 @@ header {
 //introduction section
 .intro {
   width: 100%;
-  border-radius: 10px;
   color: @mainTextColor;
   padding: @basePadding;
   text-align: center;
@@ -243,8 +251,7 @@ header {
   padding: @basePadding;
 
   .skills-parent {
-    display: flex;
-    justify-content: space-between;
+    .flex-style();
 
     .skills-flex {
       width: 350px;
