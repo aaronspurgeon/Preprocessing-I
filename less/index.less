@@ -164,12 +164,30 @@ body {
 // mixins
 .flex-style() {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.border() {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @mainTextColor;
+}
+
+.margin() {
+  margin: 20px 0 60px 0;
+}
+
+.paragraphStyles() {
+  font-size: 1.4rem;
+  color: #0f1133;
+  line-height: 1.4;
 }
 
 // nav bar
 header {
-  margin: 20px 0 20px 0;
+  // margin: 20px 0 20px 0;
+  .margin();
   padding: 20px;
 
   nav {
@@ -213,15 +231,12 @@ header {
   h2 {
     font-size: 1.5rem;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid @mainTextColor;
+    .border();
   }
 
   p {
-    font-size: @paragraphTextSize;
-    line-height: 1.3;
-    margin-bottom: 20px;
+    .paragraphStyles();
+    .margin();
     text-align: left;
   }
 
@@ -231,7 +246,7 @@ header {
     border-radius: 10px;
     color: white;
     font-size: 1.3rem;
-    float: left;
+    text-align: center;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.3s;
@@ -252,13 +267,22 @@ header {
   color: @mainTextColor;
   padding: @basePadding;
 
-  .skills-parent {
-    .flex-style();
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    // .border();
+  }
 
+  .skills-parent {
     .skills-flex {
+      .flex-style();
       width: 100%;
-      margin: 40px 0 40px 0;
-      line-height: 1.4;
+      text-align: center;
+
+      .fab {
+        margin-top: 50px;
+      }
 
       h1 {
         font-size: 2.3rem;
@@ -270,16 +294,13 @@ header {
       }
 
       p {
-        font-size: @paragraphTextSize;
+        .paragraphStyles();
+      }
+
+      .icons {
+        width: 30%;
       }
     }
-    // .list {
-    //   p {
-    //     border: 1px solid @mainTextColor;
-    //     padding: 10px 0 10px 15px;
-    //     font-size: @paragraphTextSize;
-    //   }
-    // }
   }
 }
 
@@ -289,22 +310,35 @@ header {
   margin-bottom: 40px;
   color: @mainTextColor;
   padding: @basePadding;
+  // display: flex;
+  // flex-flow: row wrap;
+
+  .bottom-title {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    .margin();
+  }
 
   .bottom-parent {
     display: flex;
-    flex-flow: column nowrap;
-    font-size: @paragraphTextSize;
+    justify-content: space-evenly;
 
     .bottom-text {
-      display: flex;
+      // display: flex;
       padding: 10px;
-      justify-content: space-between;
+      // justify-content: space-between;
+      // text-align: left;
     }
-
-    .grey {
-      background-color: @mainTextColor;
-      color: white;
-    }
+  
+    // .grey {
+    //   background-color: @mainTextColor;
+    //   color: white;
+    // }
   }
 }
 
