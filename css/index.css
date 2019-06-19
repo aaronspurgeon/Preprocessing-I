@@ -287,11 +287,6 @@ header nav a:hover {
   color: #0f1133;
   padding: 50px 30px;
 }
-.bottom .bottom-title {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 40px;
-}
 .bottom h2 {
   font-size: 2.5rem;
   text-align: center;
@@ -360,4 +355,31 @@ footer {
   width: 80vh;
   height: 30vh;
   padding: 2%;
+}
+.projects {
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding: 50px 30px;
+}
+.projects .project {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 350px;
+  text-align: center;
+  margin-top: 40px;
+}
+.projects .project img {
+  width: 50%;
+}
+.projects .project a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #0f1133;
+  margin-top: 20px;
+}
+.projects .project a:hover {
+  text-decoration: underline;
 }
