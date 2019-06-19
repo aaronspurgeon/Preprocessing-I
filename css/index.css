@@ -184,7 +184,7 @@ header nav a {
   transition-duration: 0.3s;
 }
 header nav a:hover {
-  color: black;
+  color: #0f1133;
   transform: scale(1.1);
 }
 .intro {
@@ -229,20 +229,21 @@ header nav a:hover {
   text-align: left;
 }
 .intro a {
-  background-color: #0f1133;
+  background-color: transparent;
   padding: 20px;
   border-radius: 10px;
-  color: white;
+  border: 1px solid #0f1133;
+  color: #0f1133;
   font-size: 1.3rem;
   text-align: center;
   cursor: pointer;
-  transition-property: all;
-  transition-duration: 0.3s;
   text-decoration: none;
+  transition: background-color color;
+  transition-duration: 0.3s;
 }
 .intro a:hover {
-  transform: scale(1.1);
-  background-color: #1d204d;
+  background-color: #0f1133;
+  color: white;
 }
 .skills {
   width: 100%;
@@ -320,4 +321,19 @@ footer {
   height: 80px;
   padding: 5%;
   color: white;
+}
+.top {
+  display: flex;
+  flex-flow: column wrap;
+}
+.top h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0f1133;
+}
+.top img {
+  width: 80vh;
+  height: 30vh;
+  padding: 2%;
 }
