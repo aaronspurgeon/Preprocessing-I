@@ -1,19 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>My Resume</title>
+    <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+      crossorigin="anonymous"
+    />
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="portfolio.html">Projects</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <section class="intro">
+        <img src="/img/portfoliopic1.jpg" alt="" class="selfie" />
+        <h1>Aaron Spurgeon</h1>
+        <h2>Software Engineer</h2>
+        <p>
+          I am currently a student at Lambda School for Full Stack Web
+          Development. I love all things tech and I have a huge passion for
+          Front End Technology and React/JS. Huge emphasis on user accessibility
+          and UI.
+        </p>
+        <!-- <button href='https://aaronspurgeon.dev/' target='_blank'>Go to my portfolio website!</button> -->
+        <a href="https://aaronspurgeon.dev/" target="_blank"
+          >Go to My Portfolio Website!</a
+        >
+      </section>
+
+      <section class="skills">
+        <h1>Technology and Skills</h1>
+        <div class="skills-parent">
+          <div class="skills-flex">
+            <div class="icons">
+              <i class="fab fa-html5 fa-3x"></i>
+              <p>HTML5</p>
+            </div>
+            <div class="icons">
+              <i class="fab fa-css3-alt fa-3x"></i>
+              <p>CSS3</p>
+            </div>
+            <div class="icons">
+              <i class="fab fa-js-square fa-3x"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="icons">
+              <i class="fab fa-react fa-3x"></i>
+              <p>React</p>
+            </div>
+            <div class="icons">
+              <i class="fab fa-node fa-3x"></i>
+              <p>Node.js</p>
+            </div>
+            <div class="icons">
+              <i class="fab fa-less fa-3x"></i>
+              <p>LessCSS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom">
+        <h2>Work History</h2>
+        <div class="bottom-parent">
+          <div class="bottom-text disc">
+            <p>Yrs</p>
+            <p>2</p>
+            <p>2</p>
+            <p>1</p>
+          </div>
+          <div class="bottom-text">
+            <p>Company</p>
+            <p>Watts Water Technology</p>
+            <p>Louie's Pizza</p>
+            <p>Steele Hill Resort</p>
+          </div>
+          <div class="bottom-text">
+            <p>Title</p>
+            <p>CNC Operator</p>
+            <p>Pizza Chef</p>
+            <p>Appointment Setter</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h1>Let's Work Together</h1>
+        <div class="info">
+          <h2>Phone Number</h2>
+          <p>(603)393-1684</p>
+          <h2>Email</h2>
+          <p>aspurgeon061@gmail.com</p>
+        </div>
+      </section>
+
+      <footer>
+        <h2>Copyright Aaron Spurgeon 2019</h2>
+      </footer>
+    </div>
+  </body>
 </html>
